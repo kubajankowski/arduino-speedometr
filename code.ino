@@ -2,7 +2,7 @@ const int signalPin = 2;
 volatile unsigned int pulses = 0;
 unsigned long previousTime = 0;
 float wheelCircumference = 1.922; //17" wheel, 225/40 tire
-int pulsesPerRevolution = 1;       
+int pulsesPerRevolution = 48; // pathfinder diff      
 
 void setup() {
   pinMode(signalPin, INPUT_PULLUP);
