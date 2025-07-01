@@ -16,11 +16,11 @@
 
 
 ```cpp
-const int signalPin = 2;           // Pin where the signal is connected
+const int signalPin = 2;          
 volatile unsigned int pulses = 0;
 unsigned long previousTime = 0;
-float wheelCircumference = 2.1;    // Wheel circumference in meters (e.g. 28" bike wheel is about 2.1 m)
-int pulsesPerRevolution = 1;       // Number of pulses per one wheel revolution
+float wheelCircumference = 2.1;    
+int pulsesPerRevolution = 1;       
 
 void setup() {
   pinMode(signalPin, INPUT_PULLUP);
