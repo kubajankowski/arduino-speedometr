@@ -19,8 +19,8 @@
 const int signalPin = 2;          
 volatile unsigned int pulses = 0;
 unsigned long previousTime = 0;
-float wheelCircumference = 2.1;    
-int pulsesPerRevolution = 1;       
+float wheelCircumference = X ;    
+int pulsesPerRevolution = X;       
 
 void setup() {
   pinMode(signalPin, INPUT_PULLUP);
@@ -57,7 +57,7 @@ void countPulse() {
 
 ---
 
-## Dostosowanie do Twojej aplikacji
+## Dostosowanie kodu
 
 - Jeśli czujnik daje więcej impulsów na obrót (np. 20 impulsów/obrót), zmień `pulsesPerRevolution` na odpowiednią wartość.
 - Ustaw `wheelCircumference` zgodnie z rzeczywistą długością obwodu koła.
